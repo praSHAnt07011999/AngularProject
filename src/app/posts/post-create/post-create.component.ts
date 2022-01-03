@@ -17,6 +17,7 @@ export class PostCreateComponent{
     if(Form.invalid){
       return;
     }
-    this.postsService.addPost(Form.value.title, Form.value.content)
+    this.postsService.addPost(Form.value.title, Form.value.content);
+    Form.resetForm();
   }
 }
